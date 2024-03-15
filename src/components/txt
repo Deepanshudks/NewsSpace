@@ -1,0 +1,8 @@
+<Route exact path="/business" element={ <News pagesize={5} country="in" category="business" />}/>
+<Route exact path="/entertainment" element={ <News pagesize={5} country="in" category="entertainment" />}/>
+<Route exact path="/health" element={ <News pagesize={5} country="in" category="health" />}/>
+<Route exact path="/science" element={ <News pagesize={5} country="in" category="science" />}/>
+<Route exact path="/sports" element={ <News pagesize={5} country="in" category="sports" />}/>
+<Route exact path="/technology" element={ <News pagesize={5} country="in" category="technology" />}/>
+
+          <Route path="/"> <News pagesize={5} country="in" category="general" /></Route>
