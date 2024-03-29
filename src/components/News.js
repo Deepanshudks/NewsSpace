@@ -18,13 +18,13 @@ export class News extends Component {
 
 constructor(props){
     super(props);
-    console.log("hello from constructor from new component")
+    // console.log("hello from constructor from new component")
     this.state = {
         articles: [],
         loading: false,
         page: 1
     }
-    document.title = slice(this.props.category, )
+    document.title = (this.props.category.slice(0,1)).toUpperCase() + this.props.category.slice(1,this.props.category.length)
 }
 async UpdateNews(){
     const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&page=${this.state.page}&&category=${this.props.category}&apiKey=d7c75f50e6434292b70390f4a09279d2&pageSize=${this.props.pagesize}`;
