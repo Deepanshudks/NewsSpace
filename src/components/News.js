@@ -71,7 +71,7 @@ const News = (props) => {
                     <div className="row">
                         {articles.map((element) => {
                             return <div className="col-md-4 my-4" key={element.url}>
-                                <NewsItem title={element.title ? element.title.slice(0, 45) : ""} description={element.description ? element.description.slice(0, 80) : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} />
+                                <NewsItem nav={props.nav} handletoggle={props.handletoggle} color={props.color} title={element.title ? element.title.slice(0, 45) : ""} description={element.description ? element.description.slice(0, 80) : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} />
                             </div>
                         })}
 
