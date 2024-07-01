@@ -1,21 +1,8 @@
-import React,{useState} from 'react'
+import React from 'react'
 import { Link } from "react-router-dom";
 
 
 const Navbar = (props) => {
-  const [mode, setmode] = useState("Night")
-  // const [color, color] = useState("white")
-  // const handletoggle = ()=>{
-  //   if(mode === "Night"){
-  //     setmode("Light")
-  //     setprops.color("dark")
-  //   }
-  //   else{
-  //     setmode("Night")
-  //     setprops.color("white")
-  //   }
-  // }
-
 
   return (
     <div className={`text-${(props.color==="dark")?"white":"dark"}`}>
